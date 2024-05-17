@@ -11,6 +11,14 @@
 
 <body class="bg-light">
     <!-- ヘッダー -->
+    <style>
+        h1{
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+    </style>
+
     <header class="bg-light shadow p-3 bg-body-tertiary rounded sticky-top">
         <div class="row text-center align-items-center" style="height: 40px;">
             <div class="col-2">
@@ -46,7 +54,7 @@
             <div class="col-md-2"></div>
         </div>
     </header>
-    <!-- ヘッダー -->
+    <!-- ヘッダー END -->
 
     <!-- ボディー -->
     <div class="row bg-white">
@@ -71,11 +79,11 @@
                             </tr>
                             <tr>
                                 <th scope="row">機能</th>
-                                <td>アカウント登録機能、ログイン機能、質問.情報共有の投稿機能、投稿に対しての回答機能、
-                                    回答に対してのコメント機能、グループ機能、BGM再生.停止、効果音。</td>
+                                <td>アカウント登録機能、ログイン機能、質問・情報共有の投稿機能、投稿に対しての回答機能、
+                                    回答に対してのコメント機能、グループ機能、BGM再生・停止、効果音。</td>
                             </tr>
                             <tr>
-                                <th scope="row">使用方法</th>
+                                <th scope="row">使用方法<br>と<br>画面詳細</th>
                                 <td>
                                     <table class="table table-borderless table-light table-sm">
                                         <tbody>
@@ -93,7 +101,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">4.</th>
-                                                <td>画面右上の[投稿する]ボタンを押し、投稿画面から質問.情報共有ができる。</td>
+                                                <td>画面右上の[投稿する]ボタンを押し、投稿画面から質問・情報共有ができる。</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">5.</th>
@@ -117,7 +125,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">10.</th>
-                                                <td>詳細画面の投稿と回答には[🐘]ピンクのボタンがあり、押下すると効果音が流れる。画面上部の[▶︎]再生ボタンを押すとBGMが流れる。
+                                                <td>詳細画面の投稿と回答にはピンクの[🐘]ボタンがあり、押下すると効果音が流れる。画面上部の[▶︎]再生ボタンを押すとBGMが流れる。
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -126,11 +134,15 @@
                             </tr>
                             <tr>
                                 <th scope="row">工夫点</th>
-                                <td>グループ招待画面でアカウント名入力欄のどの欄に名前を入れても全員登録されるようにロジックを工夫した。</td>
+                                <td>知恵袋では解決できないピンポイントな問題を解決するために、グループ機能を実装した。</td>
                             </tr>
                             <tr>
                                 <th scope="row">言語</th>
                                 <td>Java-16</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">動作環境</th>
+                                <td>AWS EC2,RDS,VPC</td>
                             </tr>
                             <tr>
                                 <th scope="row">その他環境</th>
@@ -178,16 +190,16 @@
                             </tr>
                             <tr>
                                 <th scope="row">機能</th>
-                                <td>支出と収入の一覧表示、絞り込み検索、項目登録、項目編集、項目削除。<br>支出の月別グラフ表示。<br>収支の推移グラフ表示、月別一覧。</td>
+                                <td>・支出と収入の一覧表示、絞り込み検索、項目登録、項目編集、項目削除。<br>・支出の月別グラフ表示。<br>・収支の推移グラフ表示、月別一覧。</td>
                             </tr>
                             <tr>
-                                <th scope="row">使用方法</th>
+                                <th scope="row">画面詳細</th>
                                 <td>
                                     <table class="table table-borderless table-light table-sm">
                                         <tbody>
                                             <tr>
                                                 <th scope="row">1.</th>
-                                                <td>画面上部の項目から各画面へ推移する。</td>
+                                                <td>画面上部の項目から各画面へ遷移する。</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">2.</th>
@@ -219,15 +231,6 @@
                                                 <th scope="row">8.</th>
                                                 <td>収支画面では、月毎の収入と支出の全項目と、その月の収入合計から支出合計をマイナスした金額が表示される。</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">9.</th>
-                                                <td>詳細画面に回答が表示されている時、その回答に対してコメントの入力欄からコメントできる。</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">10.</th>
-                                                <td>詳細画面の投稿と回答には[🐘]ピンクのボタンがあり、押下すると効果音が流れる。画面上部の[▶︎]再生ボタンを押すとBGMが流れる。
-                                                </td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </td>
@@ -245,7 +248,11 @@
                                 <td>Django</td>
                             </tr>
                             <tr>
-                                <th scope="row">その他環境</th>
+                                <th scope="row">動作環境</th>
+                                <td>AWS EC2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">その他</th>
                                 <td>gunicorn、nginx</td>
                             </tr>
                             <tr>
@@ -301,7 +308,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">制作人数</th>
-                                <td>4人(コーディングは1人)</td>
+                                <td>4人(コーディングは福原1人)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -339,12 +346,20 @@
                                 <th scope="row">言語</th>
                                 <td>HTML、CSS</td>
                             </tr>
+                            <tr>
+                                <th scope="row">制作期間</th>
+                                <td>1日</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">制作人数</th>
+                                <td>1人</td>
+                            </tr>
                         </tbody>
                     </table>
                     <hr>
                     <div class="d-flex justify-content-center">
                         <!-- URL載せていいか確認 -->
-                        <a href="####"
+                        <a href="https://school.k-platinum.com/k-free/"
                             class="btn btn-success text-right" target="_blank">サイトを開く</a>
                     </div>
                 </div>
